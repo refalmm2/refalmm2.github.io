@@ -139,3 +139,28 @@ button:hover {
 button:active {
     transform: translateY(2px);
 }
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .image-option img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #employee-name {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    /* Adjust the greeting card size on mobile */
+    #card-image {
+        height: 250px; /* Smaller height on mobile devices */
+    }
+
+    #employee-name-text {
+        font-size: 36px; /* Slightly smaller font size for mobile */
+        bottom: 10px; /* Adjust position for mobile */
+    }
+}
