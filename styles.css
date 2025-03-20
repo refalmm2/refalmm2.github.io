@@ -1,0 +1,141 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Soft light background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Heading */
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Selection Page Styling */
+#selection-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+/* Image Display Area */
+.image-option img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+/* Arrows Styling */
+#prev-arrow, #next-arrow {
+    font-size: 36px;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#prev-arrow:hover, #next-arrow:hover {
+    color: #007BFF;
+}
+
+#prev-arrow {
+    left: 200px; /* Position the left arrow */
+}
+
+#next-arrow {
+    right: 200px; /* Position the right arrow */
+}
+
+/* Greeting Card Page */
+#greeting-card-page {
+    display: none;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Greeting Card Image */
+#card-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+}
+
+/* Employee Name Text */
+#employee-name-text {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Input Field Styling */
+#employee-name {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 400px;
+    transition: border 0.3s ease;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}

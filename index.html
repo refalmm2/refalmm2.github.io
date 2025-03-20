@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
+</head>
+<body>
+    <!-- Selection Page (where images are displayed for selection) -->
+    <div id="selection-page">
+        <h2>Select a Greeting Card Image</h2>
+
+        <!-- Left Arrow -->
+        <span id="prev-arrow" onclick="showPrevImage()">&#60;</span>
+
+        <!-- Image Display Area -->
+        <div class="image-option" id="image-display">
+            <!-- Dynamic Image will appear here -->
+        </div>
+
+        <!-- Right Arrow -->
+        <span id="next-arrow" onclick="showNextImage()">&#62;</span>
+    </div>
+
+    <!-- Greeting Card Page (where the selected image will be displayed and name can be entered) -->
+    <div id="greeting-card-page" style="display:none;">
+        <div id="card-image">
+            <div id="employee-name-text"></div>
+        </div>
+
+        <input type="text" id="employee-name" placeholder="Enter your name" />
+        <button onclick="updateCard()">Submit</button>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script src="script.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>
